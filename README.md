@@ -8,4 +8,3 @@
 - **Kevin Ram** - Developer, Project Manager
 - **Ryan Ho** - Developer
 - **Matthew Liang** - Developer
-
