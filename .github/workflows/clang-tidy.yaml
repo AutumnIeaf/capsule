@@ -25,11 +25,15 @@ jobs:
 
       - name: Build project
         run: |
-          mkdir build
+          mkdir -p build
           cd build
           cmake ..
           make
 
-      - name: Run Clang-Tidy
+      - name: Run Clang-Tidy on all C++ files
         run: |
-          clang-tidy ../*.cpp -- -I../include -std=c++20
+          cd build
+          # Find all .cpp files in the repository and run Clang-Tidy on each
+          for file in $(find ../ -name '*.cpp'); do
+            clang-tidy "$file" -- -I../include -std=c++20
+          done
