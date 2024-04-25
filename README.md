@@ -6,8 +6,7 @@ Lightweight containerization service built in C++, designed to encapsulate Pytho
 - [Installation](#installation)
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributers](#contributers)
 
 ## Installation
 
