@@ -1,0 +1,3 @@
+/Users/ryanho/Documents/git/capsule/build/CMakeFiles/start.dir
+/Users/ryanho/Documents/git/capsule/build/CMakeFiles/edit_cache.dir
+/Users/ryanho/Documents/git/capsule/build/CMakeFiles/rebuild_cache.dir
