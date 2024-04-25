@@ -1,0 +1,36 @@
+name: Clang-Tidy CI
+
+on:
+  # Run the workflow on every pull request to the main branch
+  pull_request:
+    branches:
+      - main
+  # Optionally, run the workflow on each push to the repository
+  push:
+    branches:
+      - main
+
+jobs:
+  clang_tidy_check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up build environment
+        run: |
+          sudo apt update
+          sudo apt install -y clang-tidy cmake build-essential
+
+      - name: Build project
+        run: |
+          mkdir build
+          cd build
+          cmake ..
+          make
+
+      - name: Run Clang-Tidy
+        run: |
+          cd build
+          clang-tidy ../src/**/*.cpp -- -I../include -std=c++20
