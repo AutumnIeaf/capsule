@@ -6,7 +6,7 @@ Lightweight containerization service built in C++, designed to encapsulate Pytho
 - [Installation](#installation)
 - [Usage](#usage)
 - [Directory Structure](#directory-structure)
-- [Contributers](#contributers)
+- [Contributors](#contributors)
 
 ## Installation
 
@@ -64,7 +64,7 @@ Here's the breakdown of the project's directory structure:
 - **/third_party**: External dependencies or third-party libraries.
 - **/examples**: Example scripts and usage scenarios.
 
-## Contributers
+## Contributors
 
 - [PM, Developer] Kevin Ram
 - [Developer] Junkai Zheng
